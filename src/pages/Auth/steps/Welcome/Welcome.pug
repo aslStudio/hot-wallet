@@ -1,0 +1,23 @@
+include ../../../../components/Image/Image.pug
+include ../../../../components/Button/Button.pug
+
+mixin Welcome()
+    div.welcome&attributes(attributes)
+        button(
+            id="login"
+        ).__login Log in
+        div.__main
+            +Image(
+                './images/Auth/main',
+                'description',
+                'png'
+            ).__decoration
+            h1.__title HOT Wallet
+            p.__description Next generation Telegram Multichain MPC wallet.
+        +Button(
+            'createAccountButton',
+            'm',
+            'brand',
+            'true'
+        ).__button
+            | Create new account

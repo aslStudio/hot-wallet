@@ -1,0 +1,11 @@
+mixin Button(id, size, view, isShadow)
+    button(
+        id=id
+        class=`${[
+            `button-component`,
+            `button-component--view-${view}`,
+            `button-component--size-${size}`,
+            `button-component--shadow-${isShadow}`,
+        ].join(' ')}`
+    )&attributes(attributes)
+        block

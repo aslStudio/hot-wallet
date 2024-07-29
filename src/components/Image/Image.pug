@@ -1,0 +1,21 @@
+mixin Image(imagePath, alt, exc)
+    picture.image&attributes(attributes)
+        source(
+            type="image/webp"
+            src=`${imagePath}.webp`
+            width='100px'
+            height='100px'
+        )
+        source(
+            type="image/png"
+            src=`${imagePath}.${exc || 'png'}`
+            width='100px'
+            height='100px'
+        )
+        img.__main(
+            src=`${imagePath}.webp`
+            alt=alt
+            loading="lazy"
+            width='100px'
+            height='100px'
+        )

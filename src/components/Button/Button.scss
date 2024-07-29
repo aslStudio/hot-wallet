@@ -1,0 +1,25 @@
+.button-component {
+    &--view {
+        &-brand {
+            background: $brand;
+            color: $base;
+        }
+    }
+
+    &--size {
+        &-m {
+            width: 100%;
+            height: hp(110);
+            line-height: hp(110);
+            font-size: 20px;
+            line-height: 25px;
+            border-radius: 39px;
+        }
+    }
+
+    &--shadow {
+        &-true {
+            box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+}

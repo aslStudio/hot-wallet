@@ -1,0 +1,16 @@
+@import "steps/Welcome/Welcome.scss";
+
+.auth {
+    $b: &;
+
+    @include center();
+    width: 100vw;
+    height: 100vk;
+
+    &.is-welcome {
+        #{$b}__welcome {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+}
