@@ -1,6 +1,9 @@
 html {
     font-size: 12px;
     scroll-behavior: smooth;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -17,8 +20,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 img {

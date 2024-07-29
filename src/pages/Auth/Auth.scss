@@ -1,14 +1,24 @@
 @import "steps/Welcome/Welcome.scss";
+@import "steps/Data/Data.scss";
 
 .auth {
     $b: &;
 
     @include center();
     width: 100vw;
-    height: 100vk;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &.is-welcome {
         #{$b}__welcome {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+
+    &.is-data {
+        #{$b}__data{
             opacity: 1;
             z-index: 3;
         }

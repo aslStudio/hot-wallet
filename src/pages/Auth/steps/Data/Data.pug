@@ -1,0 +1,33 @@
+include ../../../../components/Image/Image.pug
+include ../../../../components/Button/Button.pug
+
+mixin Data()
+    div.data&attributes(attributes)
+        h1.__title Create account
+        div.__section.address
+            p.__subtitle Address
+            p.__description We have created a unique .tg address for you, which is similar to your telegram nickname.
+            div.__field
+                p.__label Nickname
+                input(
+                    placeholder="Enter nickname"
+                ).__value
+        div.__section.seed
+            div.__header
+                p.__subtitle Seed phrase
+                +Image(
+                    './images/Auth/icon',
+                    'icon',
+                    'png'
+                ).__icon
+            p.__description Copy yyour seed phrase right now to avoid losing your account!
+            input(
+                    placeholder="Enter seed phrase"
+            ).__value
+        +Button(
+            'createAccountNext',
+            's',
+            'brand',
+            'true',
+        ).__submit Continue
+                
