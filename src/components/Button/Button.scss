@@ -4,6 +4,11 @@
             background: $brand;
             color: $base;
         }
+
+        &-surface {
+            background: $background;
+            border: 1px solid $base;
+        }
     }
 
     &--size {

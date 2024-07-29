@@ -1,7 +1,9 @@
 include ./steps/Welcome/Welcome.pug
 include ./steps/Data/Data.pug
+include ./steps/Receiver/Receiver.pug
 
 mixin Auth()
     section.auth.is-welcome
         +Welcome.__welcome
         +Data.__data
+        +Receiver.__receiver

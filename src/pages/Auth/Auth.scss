@@ -1,5 +1,6 @@
 @import "steps/Welcome/Welcome.scss";
 @import "steps/Data/Data.scss";
+@import "steps/Receiver/Receiver.scss";
 
 .auth {
     $b: &;
@@ -17,6 +18,13 @@
 
     &.is-data {
         #{$b}__data{
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+
+    &.is-receiver {
+        #{$b}__receiver {
             opacity: 1;
             z-index: 3;
         }

@@ -1,6 +1,7 @@
 window.onload = () => {
     const welcomeButton = document.querySelector('#createAccountButton')
     const dataButton = document.querySelector('#createAccountNext')
+    const receiverButton = document.querySelector('#createReceiverNext')
     const inputs = document.querySelectorAll('input')
 
     const pageComponent = document.querySelector('.auth')
@@ -11,6 +12,10 @@ window.onload = () => {
     })
     dataButton.addEventListener('click', () => {
         pageComponent.classList.remove('is-data')
+        pageComponent.classList.add('is-receiver')
+    })
+    receiverButton.addEventListener('click', () => {
+        pageComponent.classList.remove('is-receiver')
     })
     inputs.forEach(item => {
         item.addEventListener('focus', () => {

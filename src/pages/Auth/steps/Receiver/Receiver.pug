@@ -1,0 +1,16 @@
+mixin Receiver()
+    div.receiver&attributes(attributes)
+        h1.__title 
+            | Recover using 
+            br
+            | Seed Phrase
+        p.__description Enter the backup passphrase associated with the account.
+        textarea(
+            placeholder="Seed or private  key"
+        ).__field
+        +Button(
+            'createReceiverNext',
+            's',
+            'surface',
+            'true',
+        ).__submit.bottom Continue
