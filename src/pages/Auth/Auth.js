@@ -1,7 +1,7 @@
 window.onload = () => {
     const welcomeButton = document.querySelector('#createAccountButton')
     const dataButton = document.querySelector('#createAccountNext')
-    const inputs = document.querySelectorAll('.data__value')
+    const inputs = document.querySelectorAll('input')
 
     const pageComponent = document.querySelector('.auth')
 
@@ -12,9 +12,16 @@ window.onload = () => {
     dataButton.addEventListener('click', () => {
         pageComponent.classList.remove('is-data')
     })
-    // inputs.forEach(item => {
-    //     item.addEventListener('focuc', () => {
-    //         document.body.style.transform = `translateY(-40px)`
-    //     })
-    // })
+    inputs.forEach(item => {
+        item.addEventListener('focus', () => {
+            document.querySelectorAll('.bottom').forEach(element => {
+                element.style.marginBottom = '100%'
+            })
+        })
+        item.addEventListener('blur', () => {
+            document.querySelectorAll('.bottom').forEach(element => {
+                element.style.marginBottom = '0'
+            })
+        })
+    })   
 }

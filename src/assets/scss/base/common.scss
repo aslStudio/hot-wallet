@@ -1,8 +1,6 @@
 html {
     font-size: 12px;
     scroll-behavior: smooth;
-
-    background-color: $background;
 }
 
 body {
@@ -11,13 +9,16 @@ body {
     -webkit-font-smoothing: antialiased;
     color: $base;
     font-family: $fontFamily, -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    background-color: $background;
+    background-color: $background; //-webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     min-width: 320px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 img {
