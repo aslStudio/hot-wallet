@@ -1,6 +1,6 @@
 import '../../components/components.js'
 import '../../pages/pages.js'
 
-window.onload = () => {
+window.addEventListener('load', () => {
     window.Telegram.WebApp.expand()
-}
+})

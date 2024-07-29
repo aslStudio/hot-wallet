@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
     const welcomeButton = document.querySelector('#createAccountButton')
     const dataButton = document.querySelector('#createAccountNext')
     const receiverButton = document.querySelector('#createReceiverNext')
@@ -50,4 +50,4 @@ window.onload = () => {
             })
         })
     })   
-}
+})
