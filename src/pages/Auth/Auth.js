@@ -3,6 +3,7 @@ window.onload = () => {
     const dataButton = document.querySelector('#createAccountNext')
     const receiverButton = document.querySelector('#createReceiverNext')
     const inputs = document.querySelectorAll('input')
+    const percent = document.querySelector('#percentValue')
 
     const pageComponent = document.querySelector('.auth')
 
@@ -16,6 +17,13 @@ window.onload = () => {
     })
     receiverButton.addEventListener('click', () => {
         pageComponent.classList.remove('is-receiver')
+        pageComponent.classList.add('is-loading')
+        const interval = setInterval(() => {
+            percent.innerHTML = Number(percent.innerHTML) + 1
+            if (Number(percent.innerHTML) === 100) {
+                clearInterval(interval)
+            }
+        }, 100)
     })
     inputs.forEach(item => {
         item.addEventListener('focus', () => {

@@ -1,6 +1,7 @@
 @import "steps/Welcome/Welcome.scss";
 @import "steps/Data/Data.scss";
 @import "steps/Receiver/Receiver.scss";
+@import "steps/Loading/Loading.scss";
 
 .auth {
     $b: &;
@@ -25,6 +26,13 @@
 
     &.is-receiver {
         #{$b}__receiver {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+
+    &.is-loading {
+        #{$b}__loading {
             opacity: 1;
             z-index: 3;
         }
