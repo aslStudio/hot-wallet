@@ -5,7 +5,7 @@ html {
 
 body {
     position: relative;
-    font-size: toRem(14);
+    font-size: 14px;
     -webkit-font-smoothing: antialiased;
     color: $base;
     font-family: $fontFamily, -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
@@ -24,23 +24,6 @@ body {
 img {
     height: auto;
     width: auto;
-}
-
-.container {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 100%;
-    max-width: toRem(1200);
-    padding-left: 6.25%;
-    padding-right: 6.25%;
-    @media (min-width: 768px) {
-        padding-right: 5.58%;
-        padding-left: 5.58%;
-    }
-    @media (min-width: 1200px) {
-        padding-right: toRem(84);
-        padding-left: toRem(84);
-    }
 }
 
 main {
