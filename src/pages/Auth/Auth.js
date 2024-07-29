@@ -3,6 +3,7 @@ window.onload = () => {
     const dataButton = document.querySelector('#createAccountNext')
     const receiverButton = document.querySelector('#createReceiverNext')
     const inputs = document.querySelectorAll('input')
+    const textarea = document.querySelectorAll('textarea')
     const percent = document.querySelector('#percentValue')
 
     const pageComponent = document.querySelector('.auth')
@@ -26,6 +27,18 @@ window.onload = () => {
         }, 100)
     })
     inputs.forEach(item => {
+        item.addEventListener('focus', () => {
+            document.querySelectorAll('.bottom').forEach(element => {
+                element.style.marginBottom = '100%'
+            })
+        })
+        item.addEventListener('blur', () => {
+            document.querySelectorAll('.bottom').forEach(element => {
+                element.style.marginBottom = '0'
+            })
+        })
+    })   
+    textarea.forEach(item => {
         item.addEventListener('focus', () => {
             document.querySelectorAll('.bottom').forEach(element => {
                 element.style.marginBottom = '100%'
