@@ -1,0 +1,5 @@
+$fontFamily: 'Inter';
+
+@include newFont('Inter', 'Inter-Bold', 600);
+@include newFont('Inter', 'Inter-Regular', 400);
+
