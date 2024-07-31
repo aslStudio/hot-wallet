@@ -73,3 +73,7 @@ a {
 .hidden{
     display: none!important;
 }
+
+.not-clickable {
+    pointer-events: none;
+}

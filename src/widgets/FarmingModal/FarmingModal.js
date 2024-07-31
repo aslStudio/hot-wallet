@@ -9,15 +9,15 @@ function enablePage() {
 }
 
 window.addEventListener('load', () => {
-    const allowButton = document.querySelector('#allowButton')
-    const laterButton = document.querySelector('#laterButton')
-    const root = document.querySelector('.notifications-modal')
+    const buttonSend = document.querySelector('#sendFarmingButton')
+    const notYetButton = document.querySelector('#notYetButton')
+    const root = document.querySelector('.farming-modal')
 
-    allowButton.addEventListener('click', () => {
+    buttonSend.addEventListener('click', () => {
         root.classList.remove('is-active')
         enablePage()
     })
-    laterButton.addEventListener('click', () => {
+    notYetButton.addEventListener('click', () => {
         root.classList.remove('is-active')
         enablePage()
     })

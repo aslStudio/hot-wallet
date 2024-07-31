@@ -16,14 +16,14 @@ mixin CardPool(title, percent, total, invested, claimable)
             span= claimable
         div.__buttons
             +Button(
-                "receiverButton",
+                "claimButton",
                 "xs",
                 "brand",
                 "true"
             ) 
                 | Claim
             +Button(
-                "sendButton",
+                "stakeButton",
                 "xs",
                 "brand",
                 "true"
