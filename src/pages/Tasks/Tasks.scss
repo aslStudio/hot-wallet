@@ -1,0 +1,43 @@
+.tasks {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+    background-color: $surface;
+
+    &__container {
+        padding: 0 wp(20);
+        height: 100vh;
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    &__title {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+        color: $base;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 16px;
+        width: 100%;
+        color: $base;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__item {
+        & + & {
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 100px;
+        }
+    }
+}

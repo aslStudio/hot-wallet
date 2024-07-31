@@ -1,0 +1,38 @@
+.card-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $brandDark;
+    padding: 10px;
+    border-radius: 22px;
+
+    &__square {
+        display: block;
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 16px;
+        background-color: #FFFCF9;
+        margin-right: 10px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 25px;
+        color: #2E282A;
+        margin-bottom: 0;
+        color: $surface;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 25px;
+        color: #666666;
+        text-wrap: nowrap;
+        color: $surface;
+    }
+
+    &__button {
+        margin-left: auto;
+        width: 30%;
+    }
+}
