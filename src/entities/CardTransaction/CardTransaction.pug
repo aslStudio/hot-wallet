@@ -1,0 +1,7 @@
+mixin CardTransaction(title, description, amount)
+    article.card-transaction&attributes(attributes)
+        span.__square 
+        div
+            p.__title= title
+            p.__description= description
+        p.__amount= amount

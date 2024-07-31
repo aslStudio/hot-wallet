@@ -1,7 +1,16 @@
 extends layout.pug
 
+include ./widgets/Header/Header.pug
+include ./widgets/NavBar/NavBar.pug
+include ./widgets/NotificationsModal/NotificationsModal.pug
+
 include ./pages/Auth/Auth.pug
+include ./pages/Main/Main.pug
 
 block content
+  +Header
   main
     +Auth
+    +Main
+  +NavBar
+  +NotificationsModal

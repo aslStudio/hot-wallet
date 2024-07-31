@@ -1,0 +1,16 @@
+mixin Header()
+    header.header.is-hidden
+        button.__settings
+            +Image(
+                "./images/Header/settings", 
+                "settings",
+                'png',
+            )
+        p.__name #user_id
+        button.__notifications
+            span.__badge 1
+            +Image(
+                "./images/Header/notification", 
+                "notifications",
+                "png"
+            )

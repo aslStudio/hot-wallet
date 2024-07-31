@@ -1,0 +1,33 @@
+mixin CardBalance()
+    article.card-balance&attributes(attributes)
+        h3.__title Total Balance
+        div.__row 
+            p.__value $0
+            button(
+                id="showButton"
+            ).__eye.is-open
+                +Image(
+                    "./images/CardBalance/eye_open",
+                    "show",
+                    "eye_open"
+                ).__open
+                +Image(
+                    "./images/CardBalance/eye_close",
+                    "hide",
+                    "eye_close"
+                ).__close
+        div.__buttons
+            +Button(
+                "receiverButton",
+                "xs",
+                "brand",
+                "true"
+            ) 
+                | Получить
+            +Button(
+                "sendButton",
+                "xs",
+                "brand",
+                "true"
+            ) 
+                | Отправить

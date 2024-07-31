@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
     const welcomeButton = document.querySelector('#createAccountButton')
     const dataButton = document.querySelector('#createAccountNext')
     const receiverButton = document.querySelector('#createReceiverNext')
+    const loginButton = document.querySelector('#login')
     const inputs = document.querySelectorAll('input')
     const textarea = document.querySelectorAll('textarea')
     const percent = document.querySelector('#percentValue')
@@ -22,9 +23,19 @@ window.addEventListener('load', () => {
         const interval = setInterval(() => {
             percent.innerHTML = Number(percent.innerHTML) + 1
             if (Number(percent.innerHTML) === 100) {
+                document.body.classList.remove('is-auth')
+                document.body.classList.add('is-main')
+                document.querySelector('header').classList.remove('is-hidden')
+                document.querySelector('footer').classList.remove('is-hidden')
                 clearInterval(interval)
             }
         }, 100)
+    })
+    loginButton.addEventListener('click', () => {
+        document.body.classList.remove('is-auth')
+                document.body.classList.add('is-main')
+                document.querySelector('header').classList.remove('is-hidden')
+                document.querySelector('footer').classList.remove('is-hidden')
     })
     inputs.forEach(item => {
         item.addEventListener('focus', () => {

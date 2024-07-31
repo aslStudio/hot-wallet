@@ -1,0 +1,45 @@
+.card-news {
+    $b: &;
+
+    position: relative;
+    background-color: $brandDark;
+    border-radius: 37px;
+    padding: 20px;
+
+    opacity: 1;
+    max-height: 232px;
+
+    transition: 0.3s ease;
+    transition-property: opacity, max-height, transform, padding;
+
+    &.is-hidden {
+        opacity: 0;
+        max-height: 0px;
+        transform: translateY(-20px);
+        padding: 0;
+    }
+
+    &__title {
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: 600;
+        color: $surface;
+    }
+
+    &__check {
+        margin-top: 8px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 15px;
+        aspect-ratio: 1;
+
+        picture,
+        img {
+            width: auto;
+        }
+    }
+}

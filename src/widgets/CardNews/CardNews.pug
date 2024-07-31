@@ -1,0 +1,23 @@
+mixin CardNews()
+    article.card-news&attributes(attributes)
+        h3.__title
+            | BNB Coin -
+            br
+            | New Blockchain
+            br
+            | in HOT Wallet
+        +Button(
+            "newsButton",
+            "xs",
+            "brand",
+            "true"
+        ).__check
+            | Check news
+        button(
+            id="closeButton"
+        ).__close
+            +Image(
+                "./images/common/close",
+                "close",
+                "close"
+            )

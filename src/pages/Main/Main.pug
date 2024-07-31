@@ -1,0 +1,10 @@
+include ../../widgets/CardBalance/CardBalance.pug
+include ../../widgets/CardNews/CardNews.pug
+include ../../widgets/TransactionList/TransactionList.pug
+
+mixin Main()
+    section.main
+        div.__container
+            +CardBalance().__balance
+            +CardNews().__news
+            +TransactionList().__list

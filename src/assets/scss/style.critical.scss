@@ -11,8 +11,10 @@
 @import "base/animation";
 
 // UI компоненты
-@import "../../components/components.critical";
-
-// секции
+@import "../../index.scss";
+@import "../../shared/shared.critical";
+@import "../../entities/entities.critical";
+@import "../../features/features.critical";
+@import "../../widgets/widgets.critical";
 @import "../../pages/pages.critical";
 

@@ -1,0 +1,27 @@
+.main {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+    background-color: $surface;
+
+    &__container {
+        padding: 0 wp(20);
+        height: 100vh;
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    &__balance {
+        margin-top: 100px;
+    }
+
+    &__news {
+        margin-top: 20px;
+    }
+
+    &__list {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+}

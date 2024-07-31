@@ -11,8 +11,9 @@
 @import "base/animation";
 
 // UI компоненты
-@import "../../components/components.main";
-
-// секции
+@import "../../shared/shared.main";
+@import "../../entities/entities.main";
+@import "../../features/features.main";
+@import "../../widgets/widgets.main";
 @import "../../pages/pages.main";
 

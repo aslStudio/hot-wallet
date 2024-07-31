@@ -1,0 +1,50 @@
+.notifications-modal {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    background-color: $surface;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0 0;
+    
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+
+    transition: 0.3s ease;
+    transition-property: transform, opacity;
+
+    &.is-active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+        z-index: 1000;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+}

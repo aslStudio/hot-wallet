@@ -1,0 +1,31 @@
+mixin FilterButton()
+    div.filter-button&attributes(attributes)
+        button(
+            id="filtersButton"
+        ).__button
+            span.__dot
+            span.__dot
+            span.__dot
+        div.__dropdown
+            button.__item 
+                +Image(
+                    "./images/Header/settings", 
+                    "settings",
+                    'png',
+                )
+                span Manage tokens
+            span.__divider
+            button.__item 
+                +Image(
+                    "./images/Transaction/coin", 
+                    "coin",
+                    'png',
+                )
+                span All chains
+            button.__item 
+                +Image(
+                    "./images/Transaction/near", 
+                    "near",
+                    'png',
+                )
+                span NEAR
