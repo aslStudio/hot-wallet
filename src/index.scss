@@ -1,6 +1,7 @@
 body {
     & .auth,
-    & .main {
+    & .main,
+    & .farming {
         opacity: 0;
         transition: 0.3s ease;
         transition-property: transform;
@@ -16,6 +17,13 @@ body {
 
     &.is-main {
         & .main {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+
+    &.is-farming {
+        & .farming {
             opacity: 1;
             z-index: 3;
         }

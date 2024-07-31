@@ -1,0 +1,46 @@
+.card-pool {
+    background-color: $brandDark;
+    padding: 15px;
+    border-radius: 22px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        color: $surface;
+        text-align: left;
+    }
+
+    &__permonth {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: right;
+        font-weight: 600;
+        color: $surface;
+    }
+
+    &__info {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 5px;
+        color: $surface;
+        margin-top: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        button {
+            width: calc(50% - 6px);
+        }
+    }
+}

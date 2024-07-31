@@ -1,20 +1,26 @@
 mixin NavBar()
     footer.navbar.is-hidden 
-        button 
+        button(
+            id="homeButton"
+        )
             +Image(
                 "./images/NavBar/wallet", 
                 "wallet",
                 "png"
             )
             p Wallet
-        button 
+        button(
+            id="farmingButton"
+        )
             +Image(
                 "./images/NavBar/farming", 
                 "farming",
                 "png"
             )
             p Farming
-        button 
+        button(
+            id="tasksButton"
+        )
             +Image(
                 "./images/NavBar/tasks", 
                 "farming",

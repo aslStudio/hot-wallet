@@ -1,0 +1,31 @@
+mixin CardPool(title, percent, total, invested, claimable)
+    article.card-pool&attributes(attributes)
+        div.__row
+            h4.__title= title
+            p.__permonth
+                span= percent 
+                | % per month
+        p.__info 
+            | Total staked: 
+            span= total
+            br
+            | Your invest: 
+            span= invested
+            br
+            | Claimable:
+            span= claimable
+        div.__buttons
+            +Button(
+                "receiverButton",
+                "xs",
+                "brand",
+                "true"
+            ) 
+                | Claim
+            +Button(
+                "sendButton",
+                "xs",
+                "brand",
+                "true"
+            ) 
+                | Stake
