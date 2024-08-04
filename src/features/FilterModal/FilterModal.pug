@@ -1,0 +1,25 @@
+include ../../shared/Modal/Modal.pug
+
+mixin FilterModal()
+    +Modal('filterModal').filter-modal
+        button.filter-modal__item
+            +Image(
+                "./images/common/settings-brand", 
+                "settings",
+                "png"
+            ).filter-modal__icon
+            span.filter-modal__text MANAGE TOKENS
+        button.filter-modal__item
+            +Image(
+                "./images/common/coin", 
+                "coin",
+                "png"
+            ).filter-modal__icon
+            span.filter-modal__text ALL CHAINS
+        button.filter-modal__item
+            +Image(
+                "./images/common/near", 
+                "near",
+                "png"
+            ).filter-modal__icon
+            span.filter-modal__text NEAR

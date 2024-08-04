@@ -1,0 +1,12 @@
+mixin Modal(id)
+    div(
+        id=id
+    ).modal&attributes(attributes)
+        .__overlay
+        article.__card
+            +Image(
+                "./images/common/close_brand",
+                "close",
+                "png"
+            ).__close
+            block

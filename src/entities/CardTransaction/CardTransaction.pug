@@ -1,6 +1,11 @@
-mixin CardTransaction(title, description, amount)
+mixin CardTransaction(title, description, amount, type)
     article.card-transaction&attributes(attributes)
-        span.__square 
+        .__square 
+            +Image(
+                `./images/common/${type}`,
+                type,
+                'png'
+            )
         div
             p.__title= title
             p.__description= description

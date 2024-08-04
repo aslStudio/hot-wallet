@@ -1,0 +1,62 @@
+.modal {
+    $b: &;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -3;
+
+    &.is-active {
+        z-index: 5;
+
+        #{$b}__overlay {
+            opacity: 1;
+        }
+
+        #{$b}__card {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(20px);
+        background: rgba(19, 162, 223, 0.3);
+
+        opacity: 0;
+
+        transition: 0.3s ease;
+        transition-property: opacity;
+    }
+
+    &__card {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        padding: 20px;
+        padding-bottom: 40px;
+        border-radius: 20px 20px 0 0;
+        background-color: $surface;
+        box-sizing: border-box;
+
+        opacity: 0;
+        transform: translateY(100%);
+
+        transition: 0.3s ease;
+        transition-property: transform, opacity;
+    }
+
+    &__close {
+        width: 15px;
+        height: 15px;
+        margin-left: auto;
+    }
+}

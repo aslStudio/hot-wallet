@@ -3,8 +3,9 @@ include ../../features/FilterButton/FilterButton.pug
 
 mixin TransactionList()
     div.transaction-list&attributes(attributes)
-        +FilterButton().__filter
-        h2.__title Список транкзаций
+        .__row
+            h2.__title Список транкзаций
+            +FilterButton().__filter
         p.__label Сегодня
         +CardTransaction(
             'Перевод',

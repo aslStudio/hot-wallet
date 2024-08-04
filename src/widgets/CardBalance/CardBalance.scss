@@ -2,12 +2,11 @@
     $b: &;
 
     background-color: $brand;
-    border-radius: 37px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 15px;
 
     &__title {
-        font-size: 19px;
-        line-height: 23px;
+        font-size: 14px;
         font-weight: 600;
         color: $surface;
     }
@@ -21,9 +20,8 @@
     }
 
     &__value {
-        font-size: 35px;
-        line-height: 44px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 800;
         color: $surface;
     }
 
@@ -37,8 +35,8 @@
     }
 
     &__eye {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        aspect-ratio: 1;
         position: relative;
 
         &.is-open {
@@ -60,10 +58,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 10px;
 
         button {
-            width: calc(50% - 6px);
+            width: calc(50% - 2px);
         }
     }
 }

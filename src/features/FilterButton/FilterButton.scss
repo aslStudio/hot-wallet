@@ -1,85 +1,13 @@
 .filter-button {
-    $b: &;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $brand;
+    padding: 5px;
 
-    position: relative;
-
-    &.is-active {
-        #{$b}__dropdown {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: all;
-        }
-    }
-
-    &__button {
-        background-color: $brand;
-        border-radius: 16px;
-        width: 40px;
-        aspect-ratio: 1;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 3;
-    }
-
-    &__dot {
-        display: block;
-        width: 5px;
-        aspect-ratio: 1;
-        background-color: $base;
-        border-radius: 50%;
-    }
-
-    &__dropdown {
-        position: absolute;
-        right: 0;
-        top: 60px;
-        padding: 10px;
-
-        opacity: 0;
-        transform: translateY(-100%);
-
-        transition: 0.3s ease;
-        transition-property: opacity, transform;
-
-        background-color: $brand;
-        border: 1px solid $brand;
-        border-radius: 25px;
-        z-index: 2;
-        pointer-events: none;
-    }
-
-    &__divider {
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: $surface;
-        margin: 10px 0;
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-
-        & + & {
-            margin-top: 10px;
-        }
-
-        & img,
-        & picture  {
-            width: 25px;
-            height: 25px;
-        }
-
-        & span {
-            display: block;
-            font-size: 16px;
-            line-height: 23px;
-            margin-left: 12px;
-            text-wrap: nowrap;
-            color: $base;
-        }
+    &__image {
+        width: 20px;
+        height: 20px;
     }
 }

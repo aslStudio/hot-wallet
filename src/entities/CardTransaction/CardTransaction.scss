@@ -3,37 +3,46 @@
     justify-content: space-between;
     align-items: center;
     background-color: $brand;
-    padding: 10px;
-    border-radius: 22px;
+    padding: 5px 10px;
+    border-radius: 15px;
 
     &__square {
-        display: block;
-        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
         aspect-ratio: 1;
-        border-radius: 16px;
-        background-color: #FFFCF9;
+        border-radius: 10px;
+        background-color: $surface;
         margin-right: 10px;
+
+        picture,
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     &__title {
-        font-size: 16px;
-        line-height: 25px;
-        color: #2E282A;
-        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: $surface;
+        margin-bottom: 5;
+        text-wrap: nowrap;
     }
 
     &__description {
-        font-size: 14px;
-        line-height: 25px;
-        color: #666666;
+        font-size: 10px;
+        font-weight: 600;
+        color: $surface;
         text-wrap: nowrap;
     }
 
     &__amount {
         display: block;
-        font-size: 16px;
-        line-height: 25px;
-        color: #2E282A;
+        font-size: 12px;
+        font-weight: 600;
+        color: $surface;
         margin-left: auto;
         text-wrap: nowrap;
     }
