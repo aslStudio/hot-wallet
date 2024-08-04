@@ -1,5 +1,5 @@
-$fontFamily: 'Inter';
+$fontFamily: 'Acrom';
 
-@include newFont('Inter', 'Inter-Bold', 600);
-@include newFont('Inter', 'Inter-Regular', 400);
-
+@include newFont('Acrom', 'Acrom-Regular', 400);
+@include newFont('Acrom', 'Acrom-Bold', 600);
+@include newFont('Acrom', 'Acrom-ExtraBold', 800);

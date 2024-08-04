@@ -1,51 +1,54 @@
 .button-component {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+
     &--view {
         &-brand {
             background: $brand;
-            color: $base;
+            color: $surface;
         }
 
         &-surface {
-            background: $background;
-            border: 1px solid $base;
-            color: $base;
+            background: $surface;
+            border: 2px solid $brand;
+            color: $brand;
+        }
+
+        &-flat {
+            background: transparent;
+            border: 2px solid $surface;
+            color: $surface;
         }
     }
 
     &--size {
         &-m {
-            width: 100%;
-            height: hp(80);
-            line-height: hp(80);
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 39px;
+            padding: 15px 20px;
+            font-size: 16px;
             font-weight: 600;
+            border-radius: 20px;
         }
 
         &-s {
-            width: 100%;
-            height: 60px;
-            line-height: 60px;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 39px;
+            padding: 10px 20px;
+            font-size: 14px;
             font-weight: 600;
+            border-radius: 10px;
         }
 
         &-xs {
-            width: 100%;
-            height: 50px;
-            line-height: 50px;
+            padding: 10px 15px;
             font-size: 16px;
-            border-radius: 30px;
             font-weight: 600;
+            border-radius: 20px;
         }
-    }
 
-    &--shadow {
-        &-true {
-            box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.25);
+        &-xxs {
+            padding: 7px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 20px;
         }
     }
 }

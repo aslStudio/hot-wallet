@@ -1,13 +1,10 @@
 mixin Loading
     div.loading&attributes(attributes)
-        div.__center
-            p.__percent
-                span( id="percentValue" ) 0
-                | %
-            p.__description Creating an account
-        div.__bottom
-            p Pro Tip:
-            p   
-                |A black dragon could be hiding
-                br
-                |somewhere in the fire
+        +Background
+        .__center
+            +Image(
+                './images/Auth/spinner',
+                'loader',
+                'png'
+            ).__image
+            p.__description CREATING YOUR ACCOUNT

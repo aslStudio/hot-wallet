@@ -1,23 +1,27 @@
 include ../../../../shared/Image/Image.pug
 include ../../../../shared/Button/Button.pug
+include ../../../../shared/Background/Background.pug
 
 mixin Welcome()
     div.welcome&attributes(attributes)
-        button(
-            id="login"
-        ).__login Log in
-        div.__main
-            +Image(
-                './images/Auth/main',
-                'description',
-                'png'
-            ).__decoration
-            h1.__title HOT Wallet
-            p.__description Next generation Telegram Multichain MPC wallet.
-        +Button(
-            'createAccountButton',
-            'm',
-            'brand',
-            'true'
-        ).__button
-            | Create new account
+        +Background
+        +Image(
+            './images/Auth/auth-main',
+            'decoration',
+            'png'
+        ).__decoration
+        h1.__title HOT WALLET
+        p.__description Next generation Telegram Multichain MPC wallet.
+        .__buttons
+            +Button(
+                'createAccountButton',
+                'm',
+                'surface'
+            ).__button
+                | CREATE ACCOUNT
+            +Button(
+                'login',
+                'm',
+                'brand'
+            ).__button
+                | LOG IN

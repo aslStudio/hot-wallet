@@ -1,3 +1,12 @@
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .loading {
     $b: &;
 
@@ -19,46 +28,18 @@
         width: 100%;
     }
 
-    &__percent {
-        text-align: center;
-        font-size: 26px;
-        line-height: 31px;
-        font-weight: 600;
+    &__image {
+        width: 80px;
+        height: 80px;
+        animation: 1s rotate360 infinite linear;
+        margin: 0 auto;
     }
 
     &__description {
-        text-align: center;
         font-size: 18px;
-        line-height: 21px;
-        font-weight: 600;
-        margin-top: 10px;
-    }
-
-    &__bottom {
-        @include center(horizontal);
-        bottom: 50px;
+        font-weight: 800;
         width: 100%;
         text-align: center;
-
-        p {
-            display: inline-block;
-            text-align: center;
-            font-weight: 600;
-
-            &:nth-child(1) {
-                font-size: 17px;
-                line-height: 20px;
-                color: #313135;
-            }
-
-            &:nth-child(2) {
-                text-align: left;
-                vertical-align: top;
-                padding-left: 5px;
-                font-size: 14px;
-                line-height: 17px;
-                color: #665B55;
-            }
-        }
+        margin-top: 10px;
     }
 }

@@ -1,0 +1,19 @@
+.textarea {
+    display: block;
+    box-sizing: border-box;
+    background-color: $surface;
+    border: 2px solid $brand;
+    padding: 16px 15px;
+    border-radius: 10px;
+    height: 120px;
+    width: 100%;
+
+    color: $dark;
+    font-size: 14px;
+    font-weight: 400;
+
+    &::placeholder {
+        color: $secondary;
+        font-weight: 400;
+    }
+}

@@ -5,7 +5,6 @@ window.addEventListener('load', () => {
     const loginButton = document.querySelector('#login')
     const inputs = document.querySelectorAll('input')
     const textarea = document.querySelectorAll('textarea')
-    const percent = document.querySelector('#percentValue')
 
     const pageComponent = document.querySelector('.auth')
 
@@ -20,16 +19,12 @@ window.addEventListener('load', () => {
     receiverButton.addEventListener('click', () => {
         pageComponent.classList.remove('is-receiver')
         pageComponent.classList.add('is-loading')
-        const interval = setInterval(() => {
-            percent.innerHTML = Number(percent.innerHTML) + 1
-            if (Number(percent.innerHTML) === 100) {
-                document.body.classList.remove('is-auth')
+        const timeout = setTimeout(() => {
+            document.body.classList.remove('is-auth')
                 document.body.classList.add('is-main')
                 document.querySelector('header').classList.remove('is-hidden')
                 document.querySelector('footer').classList.remove('is-hidden')
-                clearInterval(interval)
-            }
-        }, 100)
+        }, 2000)
     })
     loginButton.addEventListener('click', () => {
         document.body.classList.remove('is-auth')

@@ -1,0 +1,30 @@
+.background {
+    @include center();
+
+    width: 100vw;
+    height: 100vh;
+    background: $dark;
+    z-index: -1;
+
+    &__top {
+        position: absolute;
+        top: hp(-41);
+        right: wp(-15);
+        border-radius: 50%;
+        width: wp(267);
+        aspect-ratio: 1;
+        filter: blur(150px);
+        background-color: $brandLight;
+    }
+
+    &__bottom {
+        position: absolute;
+        top: hp(361);
+        left: wp(-59);
+        border-radius: 50%;
+        width: wp(267);
+        aspect-ratio: 1;
+        filter: blur(150px);
+        background-color: $brandLight;
+    }
+}

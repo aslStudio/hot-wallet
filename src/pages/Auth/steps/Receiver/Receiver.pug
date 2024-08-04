@@ -1,16 +1,15 @@
+include ../../../../shared/Textarea/Textarea.pug
+
 mixin Receiver()
-    div.receiver&attributes(attributes)
-        h1.__title 
-            | Recover using 
-            br
-            | Seed Phrase
+    div.receiver.container&attributes(attributes)
+        +Background
+        h2.__title RECOVER USING SEED PAHRASE
         p.__description Enter the backup passphrase associated with the account.
-        textarea(
+        +Textarea(
             placeholder="Seed or private  key"
         ).__field
         +Button(
             'createReceiverNext',
-            's',
-            'surface',
-            'true',
-        ).__submit.bottom Continue
+            'm',
+            'brand'
+        ).__button Continue

@@ -9,49 +9,43 @@
     transition: 0.3s ease;
     transition-property: opacity;
 
-    &__login {
-        position: absolute;
-        right: wp(34);
-        top: hp(34);
-    
-        font-size: 20px;
-        line-height: 24px;
-        color: $base;
-    }
-
-    &__main {
-        @include center(horizontal);
-        top: hp(137);
-
-        width: wp(600);
-    }
-
     &__decoration {
-        width: 100%;
-        margin: 0 auto;
-        aspect-ratio: 1.62;
+        width: wp(100);
+        margin-top: hp(150);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__title {
+        font-size: 35px;
+        font-weight: 800;
+        color: $brand;
         width: 100%;
         text-align: center;
-        font-size: 35px;
-        line-height: 60px;
-        font-weight: 600;
-        margin-top: 30px;
+        margin-top: hp(50);
     }
 
     &__description {
+        font-size: 20px;
+        font-weight: 600;
+        color: $brand;
         width: 100%;
         text-align: center;
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 600;
+        margin-top: hp(5);
+    }
+
+    &__buttons {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     &__button {
-        @include center(horizontal);
-        width: wp(744);
-        bottom: hp(31);
+        &:nth-child(2) {
+            margin-top: 10px;
+        }
     }
 }

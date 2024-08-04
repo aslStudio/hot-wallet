@@ -15,102 +15,40 @@
     transition-property: opacity;
 
     &__title {
+        font-size: 30px;
+        font-weight: 800;
         width: 100%;
-        text-align: left;
-        font-size: 35px;
-        line-height: 60px;
-        font-weight: 600;
-        margin-top: 12px;
-        padding-left: wp(24);
-    }
-
-    &__section {
-        width: 100%;
-        box-sizing: border-box;
-        padding-left: wp(24);
-        padding-right: wp(24);
-
-        &.address {
-            margin-top: hp(18);
-
-            #{$b}__value {
-                width: 100%;
-                box-sizing: border-box;
-                padding-left: 30px;
-                padding-top: 35px;
-                padding-bottom: 15px;
-                border-radius: 21px;
-                font-size: 22px;
-                line-height: 27px;
-            }
-        }
-
-        &.seed {
-            margin-top: hp(28);
-
-            #{$b}__value {
-                width: 100%;
-                box-sizing: border-box;
-                padding-left: 20px;
-                padding-top: 16px;
-                padding-bottom: 17px;
-                margin-top: 28px;
-                border-radius: 32px;
-                font-size: 13px;
-                line-height: 16px;
-            }
-
-            #{$b}__subtitle {
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
+        color: $brand;
+        margin-top: 30px;
     }
 
     &__subtitle {
-        font-size: 28px;
-        line-height: 34px;
-        font-weight: 600;
-    }
-
-    &__icon {
-        display: inline-block;
-        vertical-align: middle;
-        width: 25px;
-        height: 29px;
-        margin-left: 14px;
+        font-size: 20px;
+        font-weight: 800;
+        width: 100%;
+        color: $brand;
+        margin-top: 20px;
     }
 
     &__description {
-        font-size: 18px;
-        line-height: 22px;
-        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        color: $brand;
+        margin-top: 5px;
     }
 
     &__field {
-        position: relative;
-        margin-top: 14px;
+        width: 100%;
+        margin-top: 10px;
     }
 
-    &__label {
+    &__button {
         position: absolute;
-        top: 14px;
-        left: 30px;
-        font-size: 13.5px;
-        line-height: 16px;
-    }
-
-    &__value {
-        background-color: #7DCDFF;
-        color: #484C4E;
-        border: 1px solid #2E282A;
-        font-weight: 600;
-    }
-
-    &__submit {
-        margin-top: 30px;
-        margin-left: wp(24);
-        margin-right: wp(24);
-        width: calc(100% - #{wp(48)});
+        width: calc(100% - #{wp(40)});
+        left: wp(20);
+        bottom: hp(20);
+        padding: 20px;
+        box-sizing: border-box;
     }
 }
