@@ -2,16 +2,16 @@ mixin InfoCell(icon, title, description)
     div.info-cell&attributes(attributes)
         .__square
             +Image(
-                `./images/commom/${icon}`,
+                `./images/common/${icon}`,
                 'icon',
                 'png'
             )
         div.__info
-            p.__title= name
+            p.__title= title
             if description
-                p.__description
+                p.__description= description
         +Image(
-            `./images/commom/arrow-right`,
+            `./images/common/arrow-right`,
             'icon',
             'png'
         ).__arrow

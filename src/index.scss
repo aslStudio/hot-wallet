@@ -2,7 +2,8 @@ body {
     & .auth,
     & .main,
     & .farming,
-    & .tasks {
+    & .tasks,
+    & .friends {
         opacity: 0;
         transition: 0.3s ease;
         transition-property: transform;
@@ -32,6 +33,13 @@ body {
 
     &.is-tasks {
         & .tasks {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+
+    &.is-friends {
+        & .friends {
             opacity: 1;
             z-index: 3;
         }

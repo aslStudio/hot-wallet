@@ -83,13 +83,16 @@
   }), window.addEventListener("load", () => {
     const e = document.querySelector("#homeButton"),
       t = document.querySelector("#farmingButton"),
-      c = document.querySelector("#tasksButton");
+      c = document.querySelector("#tasksButton"),
+      o = document.querySelector("#friendsButton");
     e.addEventListener("click", () => {
       document.body.className = "", document.body.classList.add("is-main");
     }), t.addEventListener("click", () => {
       document.body.className = "", document.body.classList.add("is-farming");
     }), c.addEventListener("click", () => {
       document.body.className = "", document.body.classList.add("is-tasks");
+    }), o.addEventListener("click", () => {
+      document.body.className = "", document.body.classList.add("is-friends");
     });
   }), window.addEventListener("load", () => {
     const e = document.querySelector("#sendFarmingButton"),
@@ -101,12 +104,18 @@
       o.classList.remove("is-active"), c();
     });
   }), window.addEventListener("load", () => {
+    const e = document.querySelector(".card-invite");
+    document.querySelector("#copyLinkButton").addEventListener("click", () => {
+      const t = e.querySelector("input");
+      t.select(), t.setSelectionRange(0, 99999), navigator.clipboard.writeText(t.value);
+    });
+  }), window.addEventListener("load", () => {
     const e = document.querySelector("#createAccountButton"),
       t = document.querySelector("#createAccountNext"),
       c = document.querySelector("#createReceiverNext"),
       o = document.querySelector("#login"),
-      s = document.querySelectorAll("input"),
-      n = document.querySelectorAll("textarea"),
+      n = document.querySelectorAll("input"),
+      s = document.querySelectorAll("textarea"),
       d = document.querySelector(".auth");
     e.addEventListener("click", () => {
       d.classList.remove("is-welcome"), d.classList.add("is-data");
@@ -118,7 +127,7 @@
       }, 2e3);
     }), o.addEventListener("click", () => {
       document.body.classList.remove("is-auth"), document.body.classList.add("is-main"), document.querySelector("header").classList.remove("is-hidden"), document.querySelector("footer").classList.remove("is-hidden");
-    }), s.forEach(e => {
+    }), n.forEach(e => {
       e.addEventListener("focus", () => {
         document.querySelectorAll(".bottom").forEach(e => {
           e.style.marginBottom = "100%";
@@ -128,7 +137,7 @@
           e.style.marginBottom = "0";
         });
       });
-    }), n.forEach(e => {
+    }), s.forEach(e => {
       e.addEventListener("focus", () => {
         document.querySelectorAll(".bottom").forEach(e => {
           e.style.marginBottom = "100%";

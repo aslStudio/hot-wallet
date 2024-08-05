@@ -19,5 +19,29 @@
         margin-bottom: 16px;
     }
 
-    
+    &__invite {
+        margin-bottom: 16px;
+    }
+
+    &__rewards {
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 800;
+        color: $brand;
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        & + & {
+            margin-top: 10px;
+        }
+    }
+
+    &__next-page {
+        margin-top: 16px;
+        margin-bottom: 100px;
+    }
 }

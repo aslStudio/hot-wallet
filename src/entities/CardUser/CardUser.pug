@@ -2,7 +2,7 @@ include ../../shared/InfoCell/InfoCell.pug
 
 mixin CardUser(name, near, ton)
     +InfoCell(
-        './images/common/user-brand',
-        name,
+        'user-brand',
+        `${name}`,
         `${near} NEAR | ${ton} TON`
     )&attributes(attributes)

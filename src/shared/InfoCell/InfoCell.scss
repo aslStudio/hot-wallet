@@ -10,18 +10,21 @@
         border-radius: 10px;
         background-color: $surface;
         margin-right: 10px;
-    }
 
-    &__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        picture,
+        img {
+            width: 20px;
+            aspect-ratio: 1;
+        }
     }
 
     &__title {
         font-size: 12px;
         color: $surface;
         font-weight: 600;
+
+        text-align: left;
+        width: 100%;
     }
 
     &__description {
@@ -29,6 +32,9 @@
         color: $surface;
         font-weight: 600;
         margin-top: 5px;
+
+        text-align: left;
+        width: 100%;
     }
 
     &__arrow {

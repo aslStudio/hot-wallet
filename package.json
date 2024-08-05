@@ -43,7 +43,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
-        "@img/sharp-darwin-arm64": "^0.33.4",
+        "@img/sharp-darwin-x64": "^0.33.4",
         "chokidar": "^3.5.3",
         "express-compression": "^1.0.2",
         "favicons": "^7.0.2",

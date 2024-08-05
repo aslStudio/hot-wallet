@@ -4,7 +4,7 @@
     border-radius: 15px;
 
     &__title {
-        font-size: 14px;
+        font-size: 16px;
         color: $surface;
         font-weight: 600;
     }
@@ -12,6 +12,13 @@
     &__item {
         display: flex;
         align-items: center;
+        margin-top: 10px;
+
+        p {
+            font-size: 14px;
+            color: $surface;
+            font-weight: 600;
+        }
     }
 
     &__square {
@@ -22,6 +29,7 @@
         aspect-ratio: 1;
         background-color: $surface;
         border-radius: 10px;
+        margin-right: 10px;
 
         span {
             font-size: 18px;
@@ -29,6 +37,4 @@
             font-weight: 600;
         }
     }
-
-
 }

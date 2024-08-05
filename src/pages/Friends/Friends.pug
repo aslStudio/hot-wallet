@@ -1,4 +1,52 @@
+include ../../widgets/CardInvite/CardInvite.pug
+include ../../widgets/CardRewards/CardRewards.pug
+include ../../entities/CardUser/CardUser.pug
+
 mixin Friends()
     section.friends.container
         h1.__title INVITE FRIENDS
         p.__description You and your friend will receive bonuses.
+        +CardInvite.__invite
+        +CardRewards.__rewards
+        h2.__subtitle FRIENDS LIST
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +CardUser(
+            '#user_id',
+            '10.00',
+            '0.00'
+        ).__item
+        +Button(
+            "nextPageButton",
+            "xs",
+            "flat",
+        ).__next-page
+            | SHOW MORE

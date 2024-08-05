@@ -5,6 +5,7 @@
     height: 100vh;
     background: $dark;
     z-index: -1;
+    overflow: hidden;
 
     &__top {
         position: absolute;
