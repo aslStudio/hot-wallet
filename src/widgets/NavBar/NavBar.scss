@@ -12,6 +12,7 @@
     align-items: center;
     
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     background: rgba(19, 162, 223, 0.3);
 
     transition: 0.3s ease;
