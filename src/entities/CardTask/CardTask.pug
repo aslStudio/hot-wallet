@@ -1,13 +1,12 @@
-mixin CardTask(title, description)
+mixin CardTask(title, amount, description)
     article.card-task&attributes(attributes)
-        span.__square 
-        div
-            p.__title= title
-            p.__description= description
+        div.__row
+            h4.__title= title
+            p.__amount= amount
+        p.__description= description
         +Button(
-            "taskButton",
+            "taskButton", 
             "xs",
-            "brand",
-            "true"
+            "surface",
         ).__button
             | Claim

@@ -2,38 +2,29 @@
     @include center();
     width: 100vw;
     height: 100vh;
-    background-color: $surface;
 
-    &__container {
-        padding: 0 wp(20);
-        height: 100vh;
-        max-height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+    overflow-x: hidden;
+    overflow-y: auto;
 
     &__title {
-        font-size: 25px;
+        font-size: 30px;
         width: 100%;
-        text-align: center;
-        margin-top: 100px;
-        color: $base;
-        font-weight: 600;
+        margin-top: 66px;
+        color: $brand;
+        font-weight: 800;
     }
 
     &__description {
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
-        color: $base;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        font-weight: 600;
-        text-align: center;
+        color: $brand;
+        margin-top: 5px;
+        margin-bottom: 16px;
     }
 
     &__item {
         & + & {
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         &:last-child {

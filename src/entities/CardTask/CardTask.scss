@@ -1,38 +1,35 @@
 .card-task {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     background-color: $brand;
     padding: 10px;
-    border-radius: 22px;
+    border-radius: 15px;
 
-    &__square {
-        display: block;
-        width: 50px;
-        aspect-ratio: 1;
-        border-radius: 16px;
-        background-color: #FFFCF9;
-        margin-right: 10px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     &__title {
         font-size: 16px;
-        line-height: 25px;
-        color: #2E282A;
-        margin-bottom: 0;
+        font-weight: 600;
         color: $surface;
+    }
+
+    &__amount {
+        font-size: 16px;
+        font-weight: 600;
+        color: $surface;
+        text-wrap: nowrap;
+        text-align: right;
     }
 
     &__description {
+        display: block;
         font-size: 14px;
-        line-height: 25px;
-        color: #666666;
-        text-wrap: nowrap;
+        font-weight: 400;
         color: $surface;
-    }
-
-    &__button {
-        margin-left: auto;
-        width: 30%;
+        margin-bottom: 10px;
     }
 }
