@@ -1,0 +1,13 @@
+mixin CardInvite()
+    articale.card-invite&attributes(attributes)
+        h3.__title YOUR LINK
+        +Input(
+            'your link',
+            'test'
+        ).__field
+        +Button(
+            "copyLinkButton", 
+            "xs",
+            "surface",
+        ).__button
+            | COPY

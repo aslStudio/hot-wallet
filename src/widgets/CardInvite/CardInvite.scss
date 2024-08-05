@@ -1,0 +1,21 @@
+.card-invite {
+    background-color: $brand;
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    &__title {
+        color: $surface;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__field {
+        margin-bottom: 10px;
+    }
+
+    &__button {
+        width: 100%;
+    }
+}

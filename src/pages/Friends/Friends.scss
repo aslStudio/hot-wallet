@@ -1,0 +1,23 @@
+.friends {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+
+    &__title {
+        font-size: 30px;
+        width: 100%;
+        margin-top: 66px;
+        color: $brand;
+        font-weight: 800;
+    }
+
+    &__description {
+        font-size: 14px;
+        width: 100%;
+        color: $brand;
+        margin-top: 5px;
+        margin-bottom: 16px;
+    }
+
+    
+}

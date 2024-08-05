@@ -1,0 +1,18 @@
+mixin InfoCell(icon, title, description)
+    div.info-cell&attributes(attributes)
+        .__square
+            +Image(
+                `./images/commom/${icon}`,
+                'icon',
+                'png'
+            )
+        div.__info
+            p.__title= name
+            if description
+                p.__description
+        +Image(
+            `./images/commom/arrow-right`,
+            'icon',
+            'png'
+        ).__arrow
+        
