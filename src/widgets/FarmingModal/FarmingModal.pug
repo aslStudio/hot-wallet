@@ -1,29 +1,26 @@
 mixin FarmingModal()
-    article.farming-modal&attributes(attributes)
-        h4.__title Enter your personal TON address
-        p.__description This amount will be sent to the TON compatible wallet address.
-        p.__warning Minimum send amount is 0.3 TON.
-        label(for="reinvest").__check-label Reinvest 
-        input(type="checkbox" id="reinvest" value="reinvest").__check
-        input(
+    +Modal('farmingModal').farming-modal
+        h4.farming-modal__title Enter your personal TON address
+        p.farming-modal__description This amount will be sent to the TON compatible wallet address.
+        p.farming-modal__warning Minimum send amount is 0.3 TON.
+        label(for="reinvest").farming-modal__check-label Reinvest 
+        input(type="checkbox" id="reinvest" value="reinvest").farming-modal__check
+        +Input(
             placeholder="Your TON address"
-        ).__field
-        input(
+        ).farming-modal__field
+        +Input(
             placeholder="Amount"
-        ).__field
-        p.__subscription Network fee: 0.01 TON
-        div.__buttons
-            +Button(
-                "sendFarmingButton",
-                "xs",
-                "brand",
-                "true"
-            ).__button
-                | Send
-            +Button(
-                "notYetButton",
-                "xs",
-                "brand",
-                "true"
-            ).__button
-                | Not yet
+        ).farming-modal__field
+        p.farming-modal__subscription Network fee: 0.01 TON
+        +Button(
+            "sendFarmingButton",
+            "xs",
+            "brand",
+        ).farming-modal__button
+            | Send
+        +Button(
+            "notYetButton",
+            "xs",
+            "brand",
+        ).farming-modal__button
+            | Not yet

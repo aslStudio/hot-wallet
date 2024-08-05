@@ -1,25 +1,25 @@
+include ../../shared/Modal/Modal.pug
+
 mixin NotificationsModal()
-    article.notifications-modal&attributes(attributes)
-        +Image(
-            "./images/common/notifications",
-            "notifications",
-            "png"
-        ).__image
-        h4.__title 
-            | Get notified about 
-            | your account
-        p.__description Claim HOT when it is ready, complete streaks, receive urgent updates
-        +Button(
-            "allowButton",
-            "xs",
-            "brand",
-            "true"
-        ).__button
-            | Allow notifications
-        +Button(
-            "laterButton",
-            "xs",
-            "surface",
-            "true"
-        ).__button
-            | Not now
+    +Modal('notificationsModal').notifications-modal
+            +Image(
+                "./images/common/notifications",
+                "notifications",
+                "png"
+            ).notifications-modal__image
+            h4.__title 
+                | Get notified about 
+                | your account
+            p.notifications-modal__description Claim HOT when it is ready, complete streaks, receive urgent updates
+            +Button(
+                "allowButton",
+                "xxs",
+                "brand",
+            ).notifications-modal__button
+                | Allow notifications
+            +Button(
+                "laterButton",
+                "xxs",
+                "surface",
+            ).notifications-modal__button
+                | Not now

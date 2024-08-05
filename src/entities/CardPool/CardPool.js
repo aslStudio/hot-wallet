@@ -14,13 +14,13 @@ window.addEventListener('load', () => {
 
     claimButtons.forEach(item => {
         item.addEventListener('click', () => {
-            document.querySelector('.farming-modal').classList.add('is-active')
+            document.querySelector('#farmingModal').classList.add('is-active')
             disablePage()
         })
     })
     stakeButton.forEach(item => {
         item.addEventListener('click', () => {
-            document.querySelector('.farming-modal').classList.add('is-active')
+            document.querySelector('#farmingModal').classList.add('is-active')
             disablePage()
         })
     })

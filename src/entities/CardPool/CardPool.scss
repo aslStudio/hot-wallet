@@ -1,46 +1,38 @@
 .card-pool {
     background-color: $brand;
-    padding: 15px;
-    border-radius: 22px;
+    padding: 10px;
+    border-radius: 15px;
 
     &__row {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
 
     &__title {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 14px;
         font-weight: 600;
         color: $surface;
         text-align: left;
     }
 
     &__permonth {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 16px;
         text-align: right;
         font-weight: 600;
         color: $surface;
     }
 
     &__info {
-        font-size: 18px;
-        line-height: 25px;
-        margin-top: 5px;
+        font-size: 14px;
         color: $surface;
-        margin-top: 20px;
     }
 
-    &__buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
+    &__button {
+        margin-top: 10px;
 
-        button {
-            width: calc(50% - 6px);
+        & + & {
+            margin-top: 5px;
         }
     }
 }

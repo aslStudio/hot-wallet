@@ -11,7 +11,7 @@ function enablePage() {
 window.addEventListener('load', () => {
     const allowButton = document.querySelector('#allowButton')
     const laterButton = document.querySelector('#laterButton')
-    const root = document.querySelector('.notifications-modal')
+    const root = document.querySelector('#notificationsModal')
 
     allowButton.addEventListener('click', () => {
         root.classList.remove('is-active')

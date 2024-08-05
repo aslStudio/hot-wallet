@@ -8,24 +8,23 @@ mixin CardPool(title, percent, total, invested, claimable)
         p.__info 
             | Total staked: 
             span= total
-            br
+        p.__info
             | Your invest: 
             span= invested
-            br
+        p.__info
             | Claimable:
             span= claimable
-        div.__buttons
-            +Button(
-                "claimButton",
-                "xs",
-                "brand",
-                "true"
-            ) 
-                | Claim
-            +Button(
-                "stakeButton",
-                "xs",
-                "brand",
-                "true"
-            ) 
-                | Stake
+        +Button(
+            "claimButton",
+            "xs",
+            "surface",
+            "true"
+        ).__button
+            | Claim
+        +Button(
+            "stakeButton",
+            "xs",
+            "surface",
+            "true"
+        ).__button
+            | Stake

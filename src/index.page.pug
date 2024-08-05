@@ -1,19 +1,23 @@
 extends layout.pug
 
-include ./widgets/Header/Header.pug
-include ./widgets/NavBar/NavBar.pug
-include ./widgets/NotificationsModal/NotificationsModal.pug
-include ./widgets/FarmingModal/FarmingModal.pug
-include ./features/FilterModal/FilterModal.pug
-
 include ./pages/Auth/Auth.pug
 include ./pages/Main/Main.pug
 include ./pages/Farming/Farming.pug
 include ./pages/Tasks/Tasks.pug
 
+include ./widgets/Header/Header.pug
+include ./widgets/NavBar/NavBar.pug
+include ./widgets/NotificationsModal/NotificationsModal.pug
+include ./widgets/FarmingModal/FarmingModal.pug
+
+include ./features/FilterModal/FilterModal.pug
+
+include ./shared/Background/Background.pug
+
 block content
   +Header
   main
+    +Background
     +Auth
     +Main
     +Farming

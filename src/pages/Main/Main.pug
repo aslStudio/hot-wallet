@@ -3,9 +3,7 @@ include ../../widgets/CardNews/CardNews.pug
 include ../../widgets/TransactionList/TransactionList.pug
 
 mixin Main()
-    section.main
-        +Background
-        div.__container
+    section.main.container
             +CardBalance().__balance
             +CardNews().__news
             +TransactionList().__list

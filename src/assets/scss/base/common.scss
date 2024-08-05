@@ -79,6 +79,10 @@ a {
 }
 
 .container {
-    padding: 0 20px;
     box-sizing: border-box;
+    padding: 0 wp(20);
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
