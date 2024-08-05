@@ -1,0 +1,30 @@
+include ../../shared/Modal/Modal.pug
+
+mixin CreditianalsModal()
+    +Modal(
+        id="creditianalsModal"
+    ).modal-creditianals
+        h3.modal-creditianals__title Credentials
+        p.modal-creditianals__description Do not share your passphrase or private key with anyone, even with us!
+        h3.modal-creditianals__subtitle NEAR Private key
+        +Input(
+            '',
+            'text'
+        ).modal-creditianals__field
+        +Button(
+            "copyNEAR",
+            "m",
+            "surface",
+        ).modal-creditianals__button
+            | COPY
+        h3.modal-creditianals__subtitle Solana Private key
+        +Input(
+            '',
+            'text'
+        ).modal-creditianals__field
+        +Button(
+            "copySolana",
+            "m",
+            "surface",
+        ).modal-creditianals__button
+            | COPY

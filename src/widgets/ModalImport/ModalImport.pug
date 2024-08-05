@@ -1,0 +1,17 @@
+include ../../shared/Modal/Modal.pug
+
+mixin ModalImport()
+    +Modal(
+        id="modalImportAccount"
+    ).modal-import
+        h3.modal-import__title Recover using Seed Phrase
+        p.modal-import__description Enter the backup passphrase associated with the account.
+        +Textarea(
+            'Seed or private key',
+        ).modal-import__field
+        +Button(
+            "importButton",
+            "xs",
+            "brand",
+        ).modal-import__submit
+            | CONTINUE

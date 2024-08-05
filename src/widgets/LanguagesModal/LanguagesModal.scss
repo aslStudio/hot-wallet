@@ -1,0 +1,11 @@
+.modal-languages {
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $brand;
+    }
+
+    &__item {
+        margin-top: 10px;
+    }
+}

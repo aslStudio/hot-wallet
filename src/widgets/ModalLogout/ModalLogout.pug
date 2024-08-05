@@ -1,0 +1,17 @@
+include ../../shared/Modal/Modal.pug
+
+mixin ModalLogout()
+    +Modal(
+        id="modalLogout"
+    ).modal-logout
+        h3.modal-logout__title Confirm logout
+        p.modal-logout__description Are you sure you want to log out of your account? Make sure you save the seed phrase, otherwise you will lose access to your account!
+        +Input(
+            'Enter word #2 from your seed phrase',
+        ).modal-logout__field
+        +Button(
+            "importButton",
+            "xs",
+            "brand",
+        ).modal-logout__submit
+            | LOGOUT

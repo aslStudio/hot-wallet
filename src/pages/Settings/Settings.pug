@@ -1,0 +1,38 @@
+include ../../entities/CardUser/CardUser.pug
+
+include ../../shared/InfoCell/InfoCell.pug
+
+mixin Settings()
+    section.settings.container
+        h1.__title INVITE FRIENDS
+        +CardUser(
+            '#user_id',
+            '0.00',
+            '0.00'
+        )(
+            id="userCard"
+        ).__user
+        +InfoCell(
+            'document',
+            'Seed phrase'
+        )(
+            id="seedCard"
+        ).__seed
+        +InfoCell(
+            'language',
+            'Language'
+        )(
+            id="languageCard"
+        ).__language
+        +InfoCell(
+            'import',
+            'Import account'
+        )(
+            id="importCard"
+        ).__import
+        +InfoCell(
+            'logout',
+            'Logout'
+        )(
+            id="logoutCard"
+        ).__logout

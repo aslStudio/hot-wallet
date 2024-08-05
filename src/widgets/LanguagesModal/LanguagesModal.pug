@@ -1,0 +1,17 @@
+mixin LanguagesModal()
+    +Modal(
+        id="languagesModal"
+    ).modal-languages
+        h3.modal-languages__title Languages
+        +InfoCell(
+            'language',
+            'English'
+        ).modal-languages__item
+        +InfoCell(
+            'language',
+            'Русский (бета)'
+        ).modal-languages__item
+        +InfoCell(
+            'language',
+            'Woof-woof'
+        ).modal-languages__item

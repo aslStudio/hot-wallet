@@ -1,0 +1,24 @@
+.settings {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+
+    &__title {
+        font-size: 30px;
+        width: 100%;
+        margin-top: 66px;
+        color: $brand;
+        font-weight: 800;
+    }
+
+    &__user,
+    &__seed,
+    &__import,
+    &__logout {
+        margin-top: 16px;
+    }
+
+    &__language {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+.modal-creditianals {
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $brand;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        color: #C76767;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: $brand;
+        margin-top: 10px;
+    }
+
+    &__field {
+        margin-top: 10px;
+    }
+
+    &__button {
+        margin-top: 10px;
+    }
+}

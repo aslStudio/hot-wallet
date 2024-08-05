@@ -5,11 +5,17 @@ include ./pages/Main/Main.pug
 include ./pages/Farming/Farming.pug
 include ./pages/Tasks/Tasks.pug
 include ./pages/Friends/Friends.pug
+include ./pages/Settings/Settings.pug
 
 include ./widgets/Header/Header.pug
 include ./widgets/NavBar/NavBar.pug
 include ./widgets/NotificationsModal/NotificationsModal.pug
 include ./widgets/FarmingModal/FarmingModal.pug
+include ./widgets/ModalAccounts/ModalAccounts.pug
+include ./widgets/CreditianalsModal/CreditianalsModal.pug
+include ./widgets/LanguagesModal/LanguagesModal.pug
+include ./widgets/ModalImport/ModalImport.pug
+include ./widgets/ModalLogout/ModalLogout.pug
 
 include ./features/FilterModal/FilterModal.pug
 
@@ -24,7 +30,13 @@ block content
     +Farming
     +Tasks
     +Friends
+    +Settings
   +NavBar
   +NotificationsModal
   +FarmingModal
   +FilterModal
+  +ModalAccounts
+  +CreditianalsModal
+  +LanguagesModal
+  +ModalImport
+  +ModalLogout

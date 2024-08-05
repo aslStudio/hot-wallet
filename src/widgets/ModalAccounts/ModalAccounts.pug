@@ -1,0 +1,20 @@
+include ../../shared/Modal/Modal.pug
+include ../../entities/CardUser/CardUser.pug
+
+include ../../shared/InfoCell/InfoCell.pug
+
+mixin ModalAccounts()
+    +Modal(
+        id="modalSelectAccount"
+    ).modal-accounts
+        h3.modal-accounts__title Select account
+        p.modal-accounts__description The use of automated TON mining software is prohibited. This can lead to blocking of miner`s account and loss of all earned TON.
+        +CardUser(
+            '#user_id',
+            '0.00',
+            '0.00'
+        ).modal-accounts__item
+        +InfoCell(
+            'import',
+            'Import account'
+        ).modal-accounts__item

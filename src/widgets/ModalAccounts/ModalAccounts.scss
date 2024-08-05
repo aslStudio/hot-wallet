@@ -1,0 +1,21 @@
+.modal-accounts {
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $brand;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        color: $brand;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        & + & {
+            margin-top: 10px;
+        }
+    }
+}
